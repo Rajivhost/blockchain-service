@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E90D0681-1DA
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockChain.API", "src\BlockChain.API\BlockChain.API.fsproj", "{87551B2F-B3FE-4192-BF7E-7A903F9EA903}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockChain.Core", "src\BlockChain.Core\BlockChain.Core.fsproj", "{DF04CE25-21DE-4788-9B28-4896BE246FB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,11 +19,16 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903} = {E90D0681-1DA8-4D03-A600-A0E6C41786E0}
+		{DF04CE25-21DE-4788-9B28-4896BE246FB9} = {E90D0681-1DA8-4D03-A600-A0E6C41786E0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
