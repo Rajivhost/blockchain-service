@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{C5FD3A8D-5AFF-4EAF-B808-87793662635C}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E90D0681-1DA8-4D03-A600-A0E6C41786E0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockChain.API", "src\BlockChain.API\BlockChain.API.fsproj", "{87551B2F-B3FE-4192-BF7E-7A903F9EA903}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{87551B2F-B3FE-4192-BF7E-7A903F9EA903} = {E90D0681-1DA8-4D03-A600-A0E6C41786E0}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

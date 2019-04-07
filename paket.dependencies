@@ -1,0 +1,7 @@
+framework: auto-detect
+storage: none
+
+source https://api.nuget.org/v3/index.json
+
+nuget FSharp.Core
+nuget Saturn.Extensions.Authorization
