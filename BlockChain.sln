@@ -12,6 +12,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockChain.API", "src\Block
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockChain.Core", "src\BlockChain.Core\BlockChain.Core.fsproj", "{DF04CE25-21DE-4788-9B28-4896BE246FB9}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "BlockChain.Clients.Console", "src\BlockChain.Clients.Console\BlockChain.Clients.Console.fsproj", "{ED7F381B-697A-479F-942F-E5AA8436E79D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903} = {E90D0681-1DA8-4D03-A600-A0E6C41786E0}
 		{DF04CE25-21DE-4788-9B28-4896BE246FB9} = {E90D0681-1DA8-4D03-A600-A0E6C41786E0}
+		{ED7F381B-697A-479F-942F-E5AA8436E79D} = {E90D0681-1DA8-4D03-A600-A0E6C41786E0}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{87551B2F-B3FE-4192-BF7E-7A903F9EA903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +33,9 @@ Global
 		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DF04CE25-21DE-4788-9B28-4896BE246FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED7F381B-697A-479F-942F-E5AA8436E79D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED7F381B-697A-479F-942F-E5AA8436E79D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED7F381B-697A-479F-942F-E5AA8436E79D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED7F381B-697A-479F-942F-E5AA8436E79D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

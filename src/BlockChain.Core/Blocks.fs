@@ -8,20 +8,22 @@ open Newtonsoft.Json
 type Transaction =
     { SenderAddress : string
       RecipientAddress : string
-      Amount : decimal }
+      Amount : decimal
+      TimeStamp : DateTimeOffset }
 
 module Transaction =
     let empty =
         { SenderAddress = String.Empty
           RecipientAddress = String.Empty
-          Amount = 0m }
+          Amount = 0m
+          TimeStamp = DateTimeOffset.Now }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 // Assembling the block
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 type Block =
     { Index : int
-      TimeStamp : DateTime
+      TimeStamp : DateTimeOffset
       PreviousHash : string
       Hash : string
       Transactions : Transaction list
@@ -30,7 +32,7 @@ type Block =
 module Block =
     let empty =
         { Index = 0
-          TimeStamp = DateTime.Now
+          TimeStamp = DateTimeOffset.Now
           PreviousHash = String.Empty
           Hash = String.Empty
           Transactions = List.Empty
@@ -49,7 +51,7 @@ module Block =
         let leadingZeros = new string('0', difficulty)
         let mutable nonce = block.Nonce
         let mutable hash = block.Hash
-        while Object.ReferenceEquals(hash, null)
+        while hash |> String.IsNullOrEmpty
               || hash.Substring(0, difficulty) <> leadingZeros do
             nonce <- nonce + 1
             hash <- { block with Nonce = nonce
