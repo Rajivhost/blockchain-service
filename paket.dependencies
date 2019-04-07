@@ -6,3 +6,4 @@ source https://api.nuget.org/v3/index.json
 nuget FSharp.Core
 nuget Newtonsoft.Json
 nuget Saturn.Extensions.Authorization
+nuget NBitcoin

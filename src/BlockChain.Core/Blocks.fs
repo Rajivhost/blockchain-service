@@ -44,14 +44,15 @@ module Block =
             sprintf "%A-%s-%s-%i" block.TimeStamp block.PreviousHash
                 (JsonConvert.SerializeObject(block.Transactions)) block.Nonce
         let inputBytes = input |> Encoding.ASCII.GetBytes
-        let outputBytes = sha256.ComputeHash(inputBytes)
-        Convert.ToBase64String(outputBytes)
+        let outputBytes = inputBytes |> sha256.ComputeHash
+        outputBytes |> Convert.ToBase64String
 
     let mine (block, difficulty) =
         let leadingZeros = new string('0', difficulty)
         let mutable nonce = block.Nonce
         let mutable hash = block.Hash
-        while hash |> String.IsNullOrEmpty
+        while hash
+              |> String.IsNullOrEmpty
               || hash.Substring(0, difficulty) <> leadingZeros do
             nonce <- nonce + 1
             hash <- { block with Nonce = nonce

@@ -5,6 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Blocks.fs" />
+    <Compile Include="Wallet.fs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="paket.references" />
